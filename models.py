@@ -3,7 +3,7 @@ import torch.nn as nn
 import torchvision.models as models
 
 class Net(nn.Module):
-    def __init__(self, num_classes=100, norm=True, scale=True):
+    def __init__(self, num_classes=50, norm=True, scale=True):
         super(Net,self).__init__()
         self.extractor = Extractor()
         self.embedding = Embedding()
